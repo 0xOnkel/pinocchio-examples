@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+
+members = [
+  "vote"
+]
+
+[workspace.dependencies]
+pinocchio = "0.8.4"
+pinocchio-system = "0.2.3"
+litesvm = "0.6.1"
+solana-sdk = "2.2.1"

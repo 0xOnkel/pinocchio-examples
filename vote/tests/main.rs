@@ -49,9 +49,10 @@ impl T {
         self.svm.send_transaction(tx)
     }
 }
+
 fn setup() -> T {
     let mut svm = LiteSVM::new();
-    svm.add_program_from_file(ID.into(), "target/deploy/vote.so")
+    svm.add_program_from_file(ID.into(), "../target/deploy/vote.so")
         .unwrap();
 
     let keypair = Keypair::new();
